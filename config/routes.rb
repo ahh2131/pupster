@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 post "api/signup" => "owner#api_signup",
     as: 'api_signup', :defaults => { :format => 'json' }, :constraints => { :email => /[^\/]+/ }
 
+get "addPuppy" => "puppy#addPuppy", as: 'add_puppy'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
