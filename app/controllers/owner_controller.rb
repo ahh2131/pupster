@@ -1,5 +1,6 @@
 class OwnerController < ApplicationController
 skip_before_filter  :verify_authenticity_token
+# this is a coment
         def api_signup
                 user = Owner.new
                 user.name = params[:name]
